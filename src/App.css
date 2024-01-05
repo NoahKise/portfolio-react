@@ -2,7 +2,6 @@ body {
   background: rgb(163, 247, 181);
   background: linear-gradient(90deg, rgba(163, 247, 181, 1) 15%, rgba(64, 201, 162, 1) 50%, rgba(47, 156, 149, 1) 85%);
   --animate-duration: 1500ms;
-  --animate-delay: 0.9s;
 }
 
 #name {
@@ -104,4 +103,34 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   /* color: transparent; */
+}
+
+.contactIcon {
+  color: black;
+}
+
+.contactRow {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: fit-content;
+  font-family: horison;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.contactRow p{
+  margin-top: auto;
+  margin-bottom: auto;
+  color: black;
+}
+
+.contactRow:hover {
+  transform: scale(1.2);
+}
+
+#contactRows {
+  padding: 30px;
 }

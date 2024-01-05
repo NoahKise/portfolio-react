@@ -3,7 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import KeyboardIcon from '@mui/icons-material/Keyboard';
-import EmailIcon from '@mui/icons-material/Email';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 import { Link } from "react-router-dom";
 
 export const Header = () => {
@@ -33,7 +33,7 @@ export const Header = () => {
             <GitHubIcon />
           </a>
           <Link to="/contact" className='icon'>
-            <EmailIcon />
+            <ContactMailIcon />
           </Link>
         </div>
       </div>
