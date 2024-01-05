@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+body {
+  background: rgb(163, 247, 181);
+  background: linear-gradient(90deg, rgba(163, 247, 181, 1) 15%, rgba(64, 201, 162, 1) 50%, rgba(47, 156, 149, 1) 85%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#name {
+  color: black;
+  font-size: 5vw;
+  font-family: horison;
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#headshot {
+  margin-top: 1vw;
+  margin-left: 5px;
+  border-radius: 50%;
+  width: 10vw;
+  min-width: 30px;
+  height: 10vw;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#nameLine {
+  width: 95vw;
+}
+
+@font-face {
+  font-family: horison;
+  src: url(./assets/fonts/Horison.ttf);
+}
+
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   display: flex;
+  flex-direction: row;
+}
+
+#nameAndLinks {
+  display: flex;
+  margin-left: 2vw;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#links {
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.linkWithText {
+  font-family: horison;
+  display: flex;
+  flex-direction: row;
+}
+
+
+a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.linkWithText p{
+  margin-top: auto;
+  margin-bottom: auto;
+  /* text-decoration: none; */
+  font-size: 1vw;
+}
+
+.icon {
+  margin-right: 2vw;
+  color: black;
+  font-size: 30px;
 }
