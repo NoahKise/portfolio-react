@@ -1,7 +1,7 @@
 export const Music = () => {
   return (
     <>
-      <div className="animate__animated animate__backInUp">
+      <div className="animate__animated animate__zoomInUp">
         <hr className='line'></hr>
         <iframe
           src="https://bandcamp.com/EmbeddedPlayer/album=550752137/size=large/bgcol=333333/linkcol=9a64ff/tracklist=false/transparent=true/"
