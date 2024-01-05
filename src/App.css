@@ -15,12 +15,16 @@ body {
   margin-left: 5px;
   border-radius: 50%;
   width: 10vw;
-  min-width: 30px;
   height: 10vw;
+  border: 3px solid #664147;
 }
 
-#nameLine {
-  width: 95vw;
+.line {
+  background-color: #664147;
+  border: none;
+  min-width: 380px;
+  max-width: 550px;
+  height: 3px;
 }
 
 @font-face {
@@ -29,16 +33,17 @@ body {
 }
 
 #header {
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
   display: flex;
   flex-direction: row;
+  
 }
 
 #nameAndLinks {
   display: flex;
-  margin-left: 2vw;
   flex-direction: column;
 }
 
@@ -75,4 +80,19 @@ a {
   margin-right: 2vw;
   color: black;
   font-size: 30px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+#aboutMe {
+  text-align: justify;
+  font-size: 20px;
+  font-family: horison;
+  min-width: 380px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }

@@ -11,7 +11,7 @@ function App() {
     <>
       <div id='header'>
         <div id='nameAndLinks'>
-          <h1 id='name'>NOAH KISE</h1>
+          <h1 id='name'>NoAH KISE</h1>
           <div id='links'>
             <div className='linkWithText'>
               <a href='https://gumtooth.bandcamp.com/album/your-still-life' className='icon'>
@@ -38,6 +38,11 @@ function App() {
         </div>
         <img id='headshot' src={headshot} alt='head shot' />
       </div >
+      <hr className='line'></hr>
+      <p id='aboutMe'>Service industry professional stepping out from behind the bar into the dynamic world of web development.
+        Ready to apply a strong foundation of soft skills, multitasking, and quick thinking to a new career in tech.
+        Seeking a junior developer role that fosters continued growth to widen the breadth of my skills.</p>
+      <hr className='line'></hr>
     </>
   );
 }
