@@ -99,3 +99,9 @@ a {
   padding: 5px;
 }
 
+#eye {
+  background-image: url(../src/assets/images/eye.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* color: transparent; */
+}

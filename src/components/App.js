@@ -1,18 +1,25 @@
 import '../App.css';
 import 'animate.css';
+import { Contact } from './Contact';
+import { AboutMe } from './AboutMe';
+import { Projects } from './Projects.js';
 import { Header } from './Header';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Music } from './Music';
 
 function App() {
 
   return (
     <>
-      <Header />
-      <div className="animate__animated animate__backInUp">
-        <hr className='line'></hr>
-        <p id='aboutMe'>I'm a junior web developer and musician based in Portland, Oregon. Ready to apply my foundation of soft skills, multitasking, and quick thinking to a new career in tech. Seeking a junior developer role that encourages continued growth to widen the breadth of my experience.
-        </p>
-        <hr className='line'></hr>
-      </div>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<AboutMe />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/music" element={<Music />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </Router>
     </>
   );
 }

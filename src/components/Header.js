@@ -4,37 +4,42 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import KeyboardIcon from '@mui/icons-material/Keyboard';
 import EmailIcon from '@mui/icons-material/Email';
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  return(
+  return (
     <div className="animate__animated animate__fadeInDown" id='header'>
-        <div id='nameAndLinks'>
-          <h1 id='name'>NoAH KISE</h1>
-          <div id='links'>
-            <div className='linkWithText'>
-              <a href='https://gumtooth.bandcamp.com/album/your-still-life' className='icon'>
-                <LibraryMusicIcon />
-                <p>MUSIC</p>
-              </a>
-            </div>
-            <div className='linkWithText'>
-              <a href='' className='icon'>
-                <KeyboardIcon />
-                <p>CODE</p>
-              </a>
-            </div>
-            <a href='https://www.linkedin.com/in/noahkise/' className='icon'>
-              <LinkedInIcon />
-            </a>
-            <a href='https://github.com/NoahKise' className='icon'>
-              <GitHubIcon />
-            </a>
-            <a href='' className='icon'>
-              <EmailIcon />
-            </a>
+      <div id='nameAndLinks'>
+        <Link to="/">
+          <h1 id='name'>N<span id='eye'>o</span>AH KISE</h1>
+        </Link>
+        <div id='links'>
+          <div className='linkWithText'>
+            <Link to="/projects" className='icon'>
+              <KeyboardIcon />
+              <p>CODE</p>
+            </Link>
           </div>
+          <div className='linkWithText'>
+            <Link to="/music" className='icon'>
+              <LibraryMusicIcon />
+              <p>MUSIC</p>
+            </Link>
+          </div>
+          <a href='https://www.linkedin.com/in/noahkise/' className='icon'>
+            <LinkedInIcon />
+          </a>
+          <a href='https://github.com/NoahKise' className='icon'>
+            <GitHubIcon />
+          </a>
+          <Link to="/contact" className='icon'>
+            <EmailIcon />
+          </Link>
         </div>
+      </div>
+      <Link to="/">
         <img id='headshot' src={headshot} alt='head shot' />
-      </div >
+      </Link>
+    </div >
   )
 }
