@@ -2,7 +2,7 @@
 
 #### By Noah Kise
 
-#### A web application to manage the inventory for a fictional trading card game store.
+#### A portfolio made with react to showcase my front end development skills.
 
 ## Technologies Used
 
