@@ -7,6 +7,8 @@
 ## Technologies Used
 
 * React
+* Material UI
+* Animate.css
 * HTML
 * CSS
 * JavaScript
