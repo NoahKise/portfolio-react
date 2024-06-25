@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <div className="animate__animated animate__fadeInDown" id='header'>
+    <div className="animate__animated animate__fadeIn" id='header'>
       <div id='nameAndLinks'>
         <Link to="/">
           <h1 id='name'>N<span id='eye'>o</span>AH KISE</h1>

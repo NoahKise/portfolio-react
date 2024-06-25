@@ -2,17 +2,29 @@ body {
   background: rgb(163, 247, 181);
   background: linear-gradient(90deg, rgba(163, 247, 181, 1) 15%, rgba(64, 201, 162, 1) 50%, rgba(47, 156, 149, 1) 85%);
   --animate-duration: 1500ms;
+  color: #bababa;
+}
+
+#background {
+  background: rgb(102,65,71);
+  background: linear-gradient(130deg, rgba(102,65,71,1) 0%, rgba(28,28,28,1) 24%, rgba(28,28,28,1) 76%, rgb(105, 105, 105) 100%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
 }
 
 #name {
-  color: black;
+  color: #bababa;
   font-size: 5vw;
   font-family: horison;
   margin-bottom: 5px;
 }
 
 #headshot {
-  margin-top: 1vw;
   margin-left: 5px;
   border-radius: 50%;
   width: 10vw;
@@ -38,9 +50,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
+  padding-left: 20px;
   display: flex;
   flex-direction: row;
-  
+  border-radius: 0% 200px 200px 0%;
+  background-color: rgba(28,28,28,1);
 }
 
 #nameAndLinks {
@@ -79,7 +93,7 @@ a {
 
 .icon {
   margin-right: 2vw;
-  color: black;
+  color: #bababa;
   font-size: 30px;
 }
 
@@ -96,6 +110,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+  background-color: rgba(28,28,28,1);
 }
 
 #eye {
@@ -106,7 +121,7 @@ a {
 }
 
 .contactIcon {
-  color: black;
+  color: #bababa;
 }
 
 .contactRow {
@@ -124,7 +139,7 @@ a {
 .contactRow p{
   margin-top: auto;
   margin-bottom: auto;
-  color: black;
+  color: #bababa;
 }
 
 .contactRow:hover {
@@ -149,4 +164,107 @@ iframe {
   margin-bottom: 5px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.animate__fadeIn {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(28,28,28,1);
+  border: 3px solid #664147;
+  margin-bottom: 10px;
+}
+
+.projectCard {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(28,28,28,1);
+  border: 3px solid #664147;
+  border-radius: 5%;
+  padding: 10px;
+  position: relative;
+}
+
+.projectImage {
+  display: block;
+  width: 41vw;
+  height: 50vh;
+  overflow-y: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+.projectLinks a {
+  color: #197dff;
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.projectLinks img {
+  width: 20px;
+  filter: invert(100%);
+}
+
+.linkDiv {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(52, 51, 51);
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+/* .projectImageRow {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+} */
+
+.navIcon {
+  position: absolute;
+  filter: invert(80%);
+  width: 30px;
+  height: 26vh;
+  top: 25%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#leftIcon {
+  transform: rotate(180deg);
+  left: 8px;
+}
+
+#rightIcon {
+  right: 8px;
+}
+
+.projectDetails {
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 1.22vw;
+  margin-right: 1.22vw;
+  width: 50vw;
+}
+
+.allProjects {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding-left: 1.22vw;
+  padding-right: 1.22vw;
+}
+
+.projectDesc {
+  margin-bottom: 70px;
 }

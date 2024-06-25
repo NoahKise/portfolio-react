@@ -3,7 +3,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const Contact = () => {
   return (
-    <div className="animate__animated animate__backInUp">
+    <div className="animate__animated animate__fadeIn">
       <hr className='line'></hr>
       <div id='contactRows'>
         <div className='contactRow'>

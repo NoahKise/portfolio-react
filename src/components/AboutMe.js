@@ -1,10 +1,10 @@
 export const AboutMe = () => {
   return (
-    <div className="animate__animated animate__backInUp">
-      <hr className='line'></hr>
-      <p id='aboutMe'>I'm a junior web developer and musician based in Portland, Oregon. Ready to apply my foundation of soft skills, multitasking, and quick thinking to a new career in tech. Seeking a junior developer role that encourages continued growth to widen the breadth of my experience.
+    <div className="animate__animated animate__fadeIn">
+      {/* <hr className='line'></hr> */}
+      <p id='aboutMe'>I'm a web developer and musician based in Portland, Oregon. Learning something new every day, building something new every day. If I'm not at my desk you can find me daydreaming about my next camping trip, or playing my guitar just a little too loud.
       </p>
-      <hr className='line'></hr>
+      {/* <hr className='line'></hr> */}
     </div>
   )
 }
